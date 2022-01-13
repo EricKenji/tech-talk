@@ -96,7 +96,7 @@ router.post('/login', (req, res) => {
     });
 });
 
-router.put('/logout', (req, res) => {
+router.post('/logout', (req, res) => {
     if (res.session.loggedIn) {
         req.session.destroy(() => {
             res.status(204).end();
