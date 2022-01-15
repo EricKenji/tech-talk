@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
   }
   
   body, html {
@@ -12,7 +13,7 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #5e8c5a;
     font-weight: bold;
     transition: color .1s;
   }
@@ -22,7 +23,7 @@
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #5e8c5a;
     border: 0;
     padding: 1%;
     color: white;
@@ -44,7 +45,7 @@
   textarea, input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid;
   }
   
   textarea:focus, input:focus {
@@ -75,16 +76,13 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
-    display: flex;
+    border:solid;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
-    background-color: black;
-  }
-  
-  header h1 {
-    font-size: 1em;
+    background-color: lightgray;
+    border-radius: 10px;
+    border-width: thin;
   }
   
   main {
@@ -98,7 +96,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #5e8c5a;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -153,7 +151,7 @@
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #d2d2d2;
   }
   
   .comment .meta {
