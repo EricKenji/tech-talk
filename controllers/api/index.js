@@ -1,5 +1,7 @@
+//dependencies
 const router = require('express').Router();
 
+// defines all api routes
 const userRoutes = require('./user-routes.js');
 const postRoutes = require('./post-routes');
 const commentRoutes = require('./comment-routes');

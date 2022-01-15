@@ -1,7 +1,9 @@
+// dependencies
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
+// get homepage
 router.get('/', (req, res) => {
   console.log(req.session);
   Post.findAll({
@@ -39,6 +41,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// get login page
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
@@ -48,6 +51,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// get a single post
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {

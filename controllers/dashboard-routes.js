@@ -1,8 +1,10 @@
+// dependencies
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+// dashboard route
 router.get('/', withAuth, (req, res) => {
   Post.findAll({
     where: {
@@ -39,6 +41,8 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
+
+// get edit post 
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
