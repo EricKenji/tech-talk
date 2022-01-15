@@ -16,3 +16,5 @@ https://shrouded-gorge-11182.herokuapp.com/
 
 ## Contribution
 Made by Eric
+
+![tech-talk](https://user-images.githubusercontent.com/16628477/149638815-0e28c482-4b09-473a-846e-eee6aee977d4.png)
